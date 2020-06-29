@@ -1,3 +1,5 @@
+var savebtnNine = document.getElementById("saveBtnNine");
+
 //set the current date
 setDate = function() {
     var currentDate = document.getElementById("date");
@@ -130,6 +132,12 @@ hourStatus17 = function() {
     };
 };
 
+//save on button click 9
+$('#saveBtn9').on('click', function() {   
+    var input = $('#taskNine').textContent
+    console.log(input)
+    localStorage.setItem("textNine", input)
+});
 
 hourStatus9();
 hourStatus10();
